@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,18 @@
 		805FD7F324F7C8CE00674348 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 805FD7F124F7C8CE00674348 /* Main.storyboard */; };
 		805FD7F524F7C8D000674348 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 805FD7F424F7C8D000674348 /* Assets.xcassets */; };
 		805FD7F824F7C8D000674348 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 805FD7F624F7C8D000674348 /* LaunchScreen.storyboard */; };
+		805FD80324F7D22E00674348 /* MainNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805FD80124F7D22E00674348 /* MainNewsCell.swift */; };
+		805FD80424F7D22E00674348 /* MainNewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 805FD80224F7D22E00674348 /* MainNewsCell.xib */; };
+		805FD80824F7E1F400674348 /* MostPopular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805FD80724F7E1F400674348 /* MostPopular.swift */; };
+		805FD81124F7E69500674348 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805FD81024F7E69500674348 /* API.swift */; };
+		805FD81324F7E77700674348 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805FD81224F7E77700674348 /* Config.swift */; };
+		805FD81524F7F69000674348 /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805FD81424F7F69000674348 /* Shadow.swift */; };
+		805FD81724F834C100674348 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805FD81624F834C100674348 /* DetailsVC.swift */; };
+		E5AFC2EADD634421A2E96553 /* Pods_PomacTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23A78B4D7BDF7426662FC2E /* Pods_PomacTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		012BF9657AB5AB9C9CDEE2FC /* Pods-PomacTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PomacTask.debug.xcconfig"; path = "Target Support Files/Pods-PomacTask/Pods-PomacTask.debug.xcconfig"; sourceTree = "<group>"; };
 		805FD7E824F7C8CE00674348 /* PomacTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PomacTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		805FD7EB24F7C8CE00674348 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		805FD7ED24F7C8CE00674348 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +33,15 @@
 		805FD7F424F7C8D000674348 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		805FD7F724F7C8D000674348 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		805FD7F924F7C8D000674348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		805FD80124F7D22E00674348 /* MainNewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNewsCell.swift; sourceTree = "<group>"; };
+		805FD80224F7D22E00674348 /* MainNewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainNewsCell.xib; sourceTree = "<group>"; };
+		805FD80724F7E1F400674348 /* MostPopular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopular.swift; sourceTree = "<group>"; };
+		805FD81024F7E69500674348 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		805FD81224F7E77700674348 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		805FD81424F7F69000674348 /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
+		805FD81624F834C100674348 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		D23A78B4D7BDF7426662FC2E /* Pods_PomacTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PomacTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E64C3C33E6B9C6998B7ACB96 /* Pods-PomacTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PomacTask.release.xcconfig"; path = "Target Support Files/Pods-PomacTask/Pods-PomacTask.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +49,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5AFC2EADD634421A2E96553 /* Pods_PomacTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D10010E0A3030D1CB0BC621 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D23A78B4D7BDF7426662FC2E /* Pods_PomacTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		805FD7DF24F7C8CE00674348 = {
 			isa = PBXGroup;
 			children = (
 				805FD7EA24F7C8CE00674348 /* PomacTask */,
 				805FD7E924F7C8CE00674348 /* Products */,
+				A72ECFE24D47821FC283D1C8 /* Pods */,
+				6D10010E0A3030D1CB0BC621 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +85,71 @@
 		805FD7EA24F7C8CE00674348 /* PomacTask */ = {
 			isa = PBXGroup;
 			children = (
+				805FD80F24F7E67400674348 /* API */,
+				805FD80624F7DD7600674348 /* Models */,
+				805FD80524F7D61100674348 /* Extensions */,
+				805FD7FF24F7D1FB00674348 /* Cells */,
 				805FD7EB24F7C8CE00674348 /* AppDelegate.swift */,
 				805FD7ED24F7C8CE00674348 /* SceneDelegate.swift */,
 				805FD7EF24F7C8CE00674348 /* ViewController.swift */,
+				805FD81624F834C100674348 /* DetailsVC.swift */,
 				805FD7F124F7C8CE00674348 /* Main.storyboard */,
 				805FD7F424F7C8D000674348 /* Assets.xcassets */,
 				805FD7F624F7C8D000674348 /* LaunchScreen.storyboard */,
 				805FD7F924F7C8D000674348 /* Info.plist */,
+				805FD81224F7E77700674348 /* Config.swift */,
 			);
 			path = PomacTask;
+			sourceTree = "<group>";
+		};
+		805FD7FF24F7D1FB00674348 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				805FD80024F7D20600674348 /* TV Cells */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		805FD80024F7D20600674348 /* TV Cells */ = {
+			isa = PBXGroup;
+			children = (
+				805FD80124F7D22E00674348 /* MainNewsCell.swift */,
+				805FD80224F7D22E00674348 /* MainNewsCell.xib */,
+			);
+			path = "TV Cells";
+			sourceTree = "<group>";
+		};
+		805FD80524F7D61100674348 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				805FD81424F7F69000674348 /* Shadow.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		805FD80624F7DD7600674348 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				805FD80724F7E1F400674348 /* MostPopular.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		805FD80F24F7E67400674348 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				805FD81024F7E69500674348 /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		A72ECFE24D47821FC283D1C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				012BF9657AB5AB9C9CDEE2FC /* Pods-PomacTask.debug.xcconfig */,
+				E64C3C33E6B9C6998B7ACB96 /* Pods-PomacTask.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 805FD7FC24F7C8D000674348 /* Build configuration list for PBXNativeTarget "PomacTask" */;
 			buildPhases = (
+				70EAC01E7C12AB21C476A2EA /* [CP] Check Pods Manifest.lock */,
 				805FD7E424F7C8CE00674348 /* Sources */,
 				805FD7E524F7C8CE00674348 /* Frameworks */,
 				805FD7E624F7C8CE00674348 /* Resources */,
+				80F325D620989DA48B82761D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,10 +215,53 @@
 				805FD7F824F7C8D000674348 /* LaunchScreen.storyboard in Resources */,
 				805FD7F524F7C8D000674348 /* Assets.xcassets in Resources */,
 				805FD7F324F7C8CE00674348 /* Main.storyboard in Resources */,
+				805FD80424F7D22E00674348 /* MainNewsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		70EAC01E7C12AB21C476A2EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PomacTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80F325D620989DA48B82761D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PomacTask/Pods-PomacTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PomacTask/Pods-PomacTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PomacTask/Pods-PomacTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		805FD7E424F7C8CE00674348 /* Sources */ = {
@@ -141,6 +271,12 @@
 				805FD7F024F7C8CE00674348 /* ViewController.swift in Sources */,
 				805FD7EC24F7C8CE00674348 /* AppDelegate.swift in Sources */,
 				805FD7EE24F7C8CE00674348 /* SceneDelegate.swift in Sources */,
+				805FD80324F7D22E00674348 /* MainNewsCell.swift in Sources */,
+				805FD81724F834C100674348 /* DetailsVC.swift in Sources */,
+				805FD80824F7E1F400674348 /* MostPopular.swift in Sources */,
+				805FD81324F7E77700674348 /* Config.swift in Sources */,
+				805FD81124F7E69500674348 /* API.swift in Sources */,
+				805FD81524F7F69000674348 /* Shadow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +418,7 @@
 		};
 		805FD7FD24F7C8D000674348 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 012BF9657AB5AB9C9CDEE2FC /* Pods-PomacTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +436,7 @@
 		};
 		805FD7FE24F7C8D000674348 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E64C3C33E6B9C6998B7ACB96 /* Pods-PomacTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
